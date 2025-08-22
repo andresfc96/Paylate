@@ -15,9 +15,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.andresfc96.paylate",
+      "buildNumber": "1"
     },
     "android": {
+      "package": "com.andresfc96.paylate",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -34,6 +38,11 @@
           "color": "#ffffff"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "096db55a-d102-474d-8573-5ffecc83d274"
+      }
+    }
   }
 }
