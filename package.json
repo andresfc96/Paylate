@@ -1,23 +1,63 @@
 {
-  "name": "paylateapp",
+  "name": "paylate",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "expo": "~53.0.20",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "@react-native-community/datetimepicker": "8.4.1",
+    "@react-native-picker/picker": "^2.11.1",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/stack": "^6.3.20",
+    "@supabase/supabase-js": "^2.38.4",
+    "expo": "53.0.22",
+    "expo-camera": "~16.1.11",
+    "expo-constants": "~17.1.7",
+    "expo-image-picker": "~16.1.4",
+    "expo-linking": "~7.1.7",
+    "expo-notifications": "~0.31.4",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.5"
+    "react-native": "0.79.5",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-paper": "^5.11.1",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-vector-icons": "^10.0.3",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
+    "@babel/core": "^7.20.0",
     "@types/react": "~19.0.10",
     "typescript": "~5.8.3"
   },
-  "private": true
+  "private": true,
+  "description": "Aplicación móvil para gestionar cuentas compartidas entre contactos",
+  "keywords": [
+    "react-native",
+    "expo",
+    "supabase",
+    "gestor-cuentas",
+    "gastos-compartidos",
+    "mobile-app"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/paylate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/paylate/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/paylate#readme"
 }
